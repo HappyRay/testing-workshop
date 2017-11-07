@@ -1,6 +1,7 @@
 package org.workshop;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class FlightManager {
@@ -16,5 +17,10 @@ public class FlightManager {
             throw new FlightNotFoundException();
         }
         return flight;
+    }
+
+    public List<Flight> getAvailableFlightsBetweenTwoDestinations(String origin,
+        String destination) {
+        return null;
     }
 }
