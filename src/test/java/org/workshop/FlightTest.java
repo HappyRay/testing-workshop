@@ -77,7 +77,7 @@ public class FlightTest {
     @Test
     public void should_not_allow_flight_with_no_seats() throws Exception {
         try {
-            new Flight("AA101", Collections.emptyList());
+            new Flight("AA101", Collections.emptyList(), "NYC", "SFO");
             fail();
         } catch (IllegalArgumentException e) {}
     }
